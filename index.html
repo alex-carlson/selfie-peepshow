@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Selfie Peepshow</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="galleria-1.4.2.min.js"></script>
+  <script>
+  Galleria.loadTheme('themes/classic/galleria.classic.js');
+  Galleria.run('#galleria', {
+    flickr: 'tags:self, selfie',
+    flickrOptions: {
+      sort: 'date-posted-desc'
+    }
+  });
+</script>
+  <script src="plugins/flickr/galleria.flickr.js"></script>
+  <link rel="stylesheet" type="text/css" src="themes/classic/galleria.classic.css">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="../masterStyles.css"/>
+        <script src="../master.js"></script>
+</head>
+<body>
+  <div class="keyhole"></div>
+  <div id="galleria"></div>
+</body>
+</html>
